@@ -1,0 +1,54 @@
+<h1 class="pt-3">Доходы и расходы</h1>
+
+<button id="createRevenue" type="button" class="btn btn-success me-3 mt-5">Создать доход</button>
+<button id="createExpenses" type="button" class="btn btn-danger mt-5">Создать расход</button>
+
+<div class="content-menu py-5 d-flex align-items-center">
+    <button type="button" class="menu-button btn btn-outline-secondary active" id="today">Сегодня</button>
+    <button type="button" class="menu-button btn btn-outline-secondary ms-3" id="week">Неделя</button>
+    <button type="button" class="menu-button btn btn-outline-secondary ms-3" id="month">Месяц</button>
+    <button type="button" class="menu-button btn btn-outline-secondary ms-3" id="year">Год</button>
+    <button type="button" class="menu-button btn btn-outline-secondary ms-3" id="all">Все</button>
+    <button type="button" class="menu-button btn btn-outline-secondary mx-3" id="interval">Интервал</button>
+    <div class="col-auto d-flex align-items-center interval">
+        <span class="me-3">c</span>
+        <div class="form-group position-relative">
+            <input placeholder="Дата" type="text" class="form-control interval__date" id="startDateTitle" onfocus="this.type = 'date'">
+            <div class="invalid-feedback position-absolute">
+                Выберите дату!
+            </div>
+        </div>
+        <span class="mx-3">по</span>
+        <div class="form-group position-relative">
+            <input placeholder="Дата" type="text" class="form-control interval__date" id="endDateTitle" onfocus="this.type = 'date'">
+            <div class="invalid-feedback position-absolute">
+                Выберите дату!
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="content-operation-title row text-center">
+    <span class="col">№ операции</span>
+    <span class="col">Тип</span>
+    <span class="col mx-5">Категория</span>
+    <span class="col">Сумма</span>
+    <span class="col">Дата</span>
+    <span class="col mx-5">Комментарий</span>
+    <span class="col"></span>
+</div>
+<hr>
+<div id="content-operations" class="content-operations"></div>
+<div id="modal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+            <div class="modal-body p-0">
+                <p class="m-0">Вы действительно хотите удалить перацию?</p>
+            </div>
+            <div class="modal-footer">
+                <button id="deleteCategory" type="button" class="btn btn-success">Да, удалить</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Не удалять</button>
+            </div>
+        </div>
+    </div>
+</div>

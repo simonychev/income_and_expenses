@@ -1,0 +1,33 @@
+<h1 class="mb-5">Главная</h1>
+<div id="content-menu" class="content-menu d-flex align-items-center py-5">
+    <button type="button" class="menu-button btn btn-outline-secondary active" id="today" >Сегодня</button>
+    <button type="button" class="menu-button btn btn-outline-secondary ms-3" id="week">Неделя</button>
+    <button type="button" class="menu-button btn btn-outline-secondary ms-3" id="month">Месяц</button>
+    <button type="button" class="menu-button btn btn-outline-secondary ms-3" id="year">Год</button>
+    <button type="button" class="menu-button btn btn-outline-secondary ms-3" id="all">Все</button>
+    <button type="button" class="menu-button btn btn-outline-secondary mx-3" id="interval">Интервал</button>
+    <div class="col-auto d-flex align-items-center interval">
+        <span class="me-3">c</span>
+        <div class="form-group position-relative">
+            <input placeholder="Дата" type="text" class="form-control interval__date" id="startDateTitle" onfocus="this.type = 'date'">
+            <div class="invalid-feedback position-absolute">
+                Выберите дату!
+            </div>
+        </div>
+        <span class="mx-3">по</span>
+        <div class="form-group position-relative">
+            <input placeholder="Дата" type="text" class="form-control interval__date" id="endDateTitle" onfocus="this.type = 'date'">
+            <div class="invalid-feedback position-absolute">
+                Выберите дату!
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-charts d-flex text-center pt-5">
+    <div style="width: 500px" class="pe-5">
+        <canvas id="income" ></canvas>
+    </div>
+    <div style="width: 500px" class="ps-5">
+        <canvas id="expense"></canvas>
+    </div>
+</div>

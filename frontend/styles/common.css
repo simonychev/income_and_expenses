@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("/fonts/RobotoRegular.ttf");
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url("/fonts/RobotoMedium.ttf");
+}
+
+h1 {
+    font-family: "RobotoBold", sans-serif;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.main {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.main-sidebar {
+    border-right: 1px solid #D9D9D9;    
+}
+
+.dropdown-user-image {
+    min-width: 36px;
+    height: 36px;
+    background: #D9D9D9;
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.nav-item:hover a svg path {
+    fill: white;
+}
+
+.nav-item:hover {
+    background-color: #0d6dfb;
+    border-radius: 5px;
+}

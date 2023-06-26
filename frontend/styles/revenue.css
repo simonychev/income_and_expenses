@@ -1,0 +1,38 @@
+.block-item {
+    width: 352px;
+    height: 121px;
+}
+
+.block-item-title {
+    font-size: 28px;
+    line-height: 33px;
+}
+
+#modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    left: 0;
+    top: 0;
+}
+
+#modal .modal-body {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+
+#modal .modal-footer {
+    justify-content: center;
+    border-top: none;
+}
+
+#createCategory {
+    cursor: pointer;
+}
+
+#createCategory:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}

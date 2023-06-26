@@ -1,0 +1,24 @@
+<h1>Создание дохода/расхода</h1>
+
+<div class="col-4 mb-2 mt-5">
+    <select id="type" class="form-select" aria-label="Default select example">
+      <option value="Доход">Доход</option>
+      <option value="Расход">Расход</option>
+    </select>
+</div>
+<div class="col-4 mb-2">
+    <select id="category_id" class="form-select" aria-label="Default select example">
+    </select>
+</div>
+<div class="col-4 mb-2">
+  <input class="form-control" type="number" placeholder="Сумма в $..." id="amount">
+</div>
+<div class="col-4 mb-2">
+  <input class="form-control" type="date" placeholder="Дата..." id="date">
+</div>
+<div class="col-4 mb-4">
+  <input class="form-control" type="text" placeholder="Комментарий..." id="comment">
+</div>
+
+<button id="saveCreate" type="button" class="btn btn-success me-2">Сохранить</button>
+<button id="cancelCreate" type="button" class="btn btn-danger">Отмена</button>

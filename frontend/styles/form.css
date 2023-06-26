@@ -1,0 +1,15 @@
+.sidebar {
+    display: none;
+}
+
+#content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -215px;
+    margin-top: -190px;
+}
+
+#content .form-control {
+    width: 397px;
+}
